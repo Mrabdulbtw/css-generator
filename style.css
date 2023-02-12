@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.637));
+
+}
+
+header {
+    height: 50px;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(rgb(59, 170, 152), rgba(0, 0, 0, 0.493));
+
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+
+nav h4 {
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transform: translateY(4px);
+    font-weight: 400;
+    transition: text-shadow 0.3s linear;
+    font-family: 'Itim', cursive;
+
+}
+
+nav h4:hover {
+    text-shadow: 6px 2px 20px rgb(255, 255, 255);
+}
+
+.said-bar {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: -500px;
+    box-shadow: 5px 10px 8px 2px rgba(0, 0, 0, 0.37);
+    background: linear-gradient(135deg, rgb(255 255 255 / 19%), rgb(255 255 255 / 0%));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.116);
+    box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: black;
+    width: 400px;
+    height: 100vh;
+    padding: 5px;
+    cursor: pointer;
+    transition: right 0.5s;
+}
+
+.collection {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+
+}
+
+/*js code*/
+.active {
+    right: 0px;
+}
+
+
+.more {
+    font-size: 25px;
+    color: #fff;
+
+}
+
+.close {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: rotate, 0.5s;
+}
+
+.close:hover {
+
+    transform: scale(0.7) rotate(179deg);
+
+
+}
+
+
+
+.said-bar h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: 'Itim', cursive;
+    transform: translateX(100px);
+    transition: text-shadow 0.3s linear;
+    color: #e4e1e1;
+}
+
+.said-bar h3:hover {
+    text-shadow: 6px 2px 20px rgb(255, 255, 255);
+}
+
+
+.said-bar ul {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.said-bar ul li {
+    list-style: none;
+    box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.562);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.said-bar ul li:hover {
+    border: 1px solid rgb(43, 70, 226);
+
+}
+
+
+
+.said-bar ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+}
+
+#container {
+    width: 100%;
+    height: calc(100vh - 50px);
+    transform: translateY(50px);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#container img {
+    width: 600px;
+    height: 400px;
+    transform: translateY(90px);
+    margin-left: -60px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    transition: top,right,0.5s;
+}
+#container img:hover{
+    top: 40px;
+    right: 40px;
+
+}
+
+.text {
+    width: 450px;
+    height: 100px;
+    margin-left: 90px;
+    transform: translateY(300px);
+    cursor: default;
+
+}
+
+.text h1 {
+
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.text span {
+    color: rgb(161, 118, 204);
+    text-transform: capitalize;
+}
+
+.text h2 {
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: normal;
+    font-family: 'Itim', cursive;
+
+}
+
+.text h1:hover,
+.text h2:hover {
+    text-shadow: 6px 2px 2px rgb(14, 12, 12);
+
+}
+.icon-group{
+
+    height: 30px;
+    width: 100px;
+    display: flex;
+    gap: 10px;
+    left: 98px;
+    top: 450px;
+    position: fixed;
+}
+.icon-group ion-icon{
+    font-size: 20px;
+    color: #fff;
+
+}
+.icon-group ion-icon:hover{
+
+    color: rgb(19, 133, 98);
+}
+
+
+@media (max-width:850px) {
+
+    #container {
+        display: grid;
+        overflow-x: hidden;
+    }
+
+    .text {
+        transform: translateY(30px);
+        font-size: 10px;
+        margin-right: 50px;
+
+    }
+
+    #container img {
+        margin: 0 auto;
+        width: 500px;
+        left: 5px;
+    }
+    .icon-group{
+        height: 80px;
+        width: 30px;
+        top:40px;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-right: 1px solid #fff;
+        justify-content: center;
+    }
+
+}

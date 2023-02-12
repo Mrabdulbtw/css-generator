@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./border.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="group">
+                <h4>border</h4>
+                <a href="./index.html">home</a>
+            </div>
+
+            <ion-icon name="menu-outline" class="more"></ion-icon>
+            <div class="said-bar">
+                <div class="collection">
+                    <ion-icon name="close-outline" class="close"></ion-icon>
+                    <h3>more options</h3>
+                </div>
+
+                <ul>
+                    <li><a href="./boxshadow.html">Box shadow</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+
+
+    </header>
+    <div class="container">
+
+        <div class="left-box">
+            <div id="input-container">
+                <div class="input-box">
+                    <label for="style">style</label>
+                    <div class="select">
+                        <div class="groups">
+                            <div class="text">select your style</div>
+                            <ion-icon name="chevron-down-outline" class="arrow"></ion-icon>
+                        </div>
+                        <ul class="options actived">
+                            <li>solid</li>
+                            <li>dashed</li>
+                            <li>double</li>
+                            <li>groove</li>
+                            <li>ridge</li>
+                            <li>inset</li>
+                            <li>outset</li>
+                        </ul>
+
+
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <span>10px</span>
+                    <label for="withe">width</label>
+                    <input type="range" name="withe" id="withe" min="0" max="30" value="10">
+
+                </div>
+                <div class="input-box">
+                    <span>10px</span>
+                    <label for="radius">radius</label>
+                    <input type="range" name="radius" id="radius" min="0" max="125" value="10">
+                </div>
+                <div class="input-box">
+                    <label for="color">color</label>
+                    <input type="color" name="color" id="color">
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="right-box">
+            <div class="right-container">
+                <h4>preview</h4>
+                <div class="preview-box">
+                    <div class="preview"></div>
+                </div>
+
+                <div class="code-box">
+                    <button class="copy">copy</button>
+                    <h4>code</h4>
+                    <textarea name="" id="code"></textarea>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+    <script src="./border.js"></script>
+</body>
+
+</html
